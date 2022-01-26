@@ -31,7 +31,7 @@ public class Tests : DriverDef
         Thread.Sleep(3000);
         loginPage.EnterLoginAndPassword("xtvarum01", "password");
         loginPage.ClickModalLogin();
-        Assert.That
+        //Assert.That
 
     }
 }
