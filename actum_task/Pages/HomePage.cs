@@ -1,19 +1,17 @@
 ﻿using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace actum_task.Pages
 {
     class HomePage : DriverDef
     {
-        IWebElement BtnLogin => Driver.FindElement(By.Id("login2"));
+        IWebElement btnLogin => Driver.FindElement(By.Id("login2"));
+        IWebElement btnLogOff => Driver.FindElement(By.Id("logout2"));
+        IWebElement btnWelcome => Driver.FindElement(By.Id("nameofuser")); 
 
-        public void ClickLogin() => BtnLogin.Click();
-
+        public void ClickLogin() => btnLogin.Click();
+        public bool IsLoginExist() => btnLogin.Displayed;
+        public bool IsLogOffExist() => btnLogOff.Displayed;
+        public bool IsWelcomeExist() => btnWelcome.Displayed;
     }
 }
 

@@ -1,15 +1,10 @@
 ﻿using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace actum_task.Pages
 {
     class LoginPage : DriverDef
     {
-        IWebElement BtnLogin => Driver.FindElement(By.Id("login2"));
+        IWebElement btnLogin => Driver.FindElement(By.Id("login2"));
         IWebElement txtUserName => Driver.FindElement(By.Id("loginusername"));
         IWebElement txtPassword => Driver.FindElement(By.Id("loginpassword"));
         IWebElement btnModalLogin => Driver.FindElement(By.XPath("//*[@onclick='logIn()']"));
@@ -22,7 +17,7 @@ namespace actum_task.Pages
 
         public void ClickLogin()
         {
-            BtnLogin.Click();
+            btnLogin.Click();
         }
 
         public void ClickModalLogin()
@@ -30,6 +25,5 @@ namespace actum_task.Pages
             btnModalLogin.Click();
         }
     }
-
 }
 
