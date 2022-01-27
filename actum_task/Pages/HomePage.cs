@@ -14,6 +14,3 @@ namespace actum_task.Pages
         public bool IsWelcomeExist() => btnWelcome.Displayed;
     }
 }
-
-
-

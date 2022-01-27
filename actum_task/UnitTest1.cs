@@ -10,7 +10,6 @@ public class Tests : DriverDef
 {
     string test_url = "https://www.demoblaze.com/";
 
-    
     [SetUp]
     public void Setup()
     {

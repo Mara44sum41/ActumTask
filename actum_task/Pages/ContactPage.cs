@@ -31,6 +31,4 @@ namespace actum_task.Pages
             simpleAlert.Accept();
         }
     }
-
 }
-
